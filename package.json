@@ -1,0 +1,32 @@
+{
+  "name": "AuraChallenge",
+  "version": "1.0.0",
+  "description": "Aura Challenge automation script",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/.bin/wdio ./wdio.conf.js",
+    "createaccountscenario": "node ./node_modules/.bin/wdio ./wdio.conf.js --suite createaccountscenario",
+    "alltestcases": "node ./node_modules/.bin/wdio ./wdio.conf.js --suite alltestcases"
+  },
+  "author": "Jitender Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^6.0.14",
+    "@wdio/local-runner": "^6.0.18",
+    "@wdio/mocha-framework": "^6.0.16",
+    "@wdio/selenium-standalone-service": "^6.0.16",
+    "@wdio/spec-reporter": "^6.0.16",
+    "@wdio/sync": "^6.0.18",
+    "chai": "^4.2.0",
+    "chai-webdriverio": "^1.0.0",
+    "chance": "^1.1.4",
+    "chromedriver": "^91.0.0",
+    "dateformat": "^3.0.3",
+    "local-runner": "^0.1.1-alpha",
+    "wdio-chromedriver-service": "^6.0.2",
+    "webdriverio": "^6.0.18"
+  },
+  "dependencies": {
+    "@wdio/cli": "^6.0.18"
+  }
+}
